@@ -287,11 +287,16 @@ a {
   background-color: var(--primary);
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item img {
   width: 100%;
   border-radius: 10px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 
 /* ===== BLOG ===== */
@@ -363,7 +368,7 @@ a {
 }
 
 .blog-post:hover img {
-  filter: blur(1px); /* Efek blur saat cursor dihover */
+  filter: blur(1px);
 }
 
 .blog-post::after {
@@ -373,7 +378,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(252, 222, 198, 0.5); /* Warna overlay saat cursor dihover */
+  background-color: rgba(252, 222, 198, 0.5);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -381,7 +386,7 @@ a {
 }
 
 .blog-post:hover::after {
-  opacity: 1; /* Munculkan overlay saat cursor dihover */
+  opacity: 1;
 }
 
 /* ===== CONTACT ===== */
@@ -397,7 +402,7 @@ form {
 }
 
 .contact-form .form-input-item {
-  margin-bottom: 30px; /* tambahkan jarak 30px antara setiap form-input-item */
+  margin-bottom: 30px;
 }
 
 .contact-form .input-label {
@@ -406,8 +411,8 @@ form {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 1;
-  color: #000; /* warna label default */
-  transition: color 0.3s; /* tambahkan transisi untuk efek smooth */
+  color: #000;
+  transition: color 0.3s;
 }
 
 .contact-form .input-box {
@@ -424,11 +429,11 @@ form {
 }
 
 .contact-form .input-box:focus + .input-label {
-  color: var(--primary); /* ubah warna label saat input dalam fokus */
+  color: var(--primary);
 }
 
 .contact-form .input-box:focus {
-  border-bottom: 1px solid var(--primary); /* ubah warna border-bottom saat input dalam fokus */
+  border-bottom: 1px solid var(--primary);
 }
 
 .form-btn {
