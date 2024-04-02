@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIK2032-Project Adriano Posumah</title>
-    <link rel="shortcut icon" type="x-icon" href="/" />
+    <link rel="shortcut icon" type="x-icon" href="image/icon.png" />
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,12 +30,12 @@
           <span class="profile-title">Informatika</span>
           <ul class="profile-social">
             <li>
-              <a href="#" style="color: #347bff">
+              <a href="https://www.facebook.com" style="color: #347bff">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="#" style="color: #ff7575">
+              <a href="https://www.instagram.com" style="color: #ff7575">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
@@ -80,7 +80,7 @@
       <!-- Page Content -->
       <div class="page-content">
         <!-- Home Section -->
-        <div class="page-content-item home">
+        <div class="page-content-item home" id="home">
           <div class="content">
             <div class="page-title-wrap">
               <h2 class="page-title">Home</h2>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <!-- Gallery Section -->
-        <div class="page-content-item gallery">
+        <div class="page-content-item gallery" id="gallery">
           <div class="content">
             <div class="page-title-wrap">
               <h2 class="page-title">Gallery</h2>
@@ -134,14 +134,14 @@
                   <img class="gallery-photo" src="image/9.jpg" alt="" />
                 </div>
                 <div class="gallery-item">
-                  <img class="gallery-photo" src="image/12.jpg" alt="" />
+                  <img class="gallery-photo" src="image/10.jpg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Blog Section -->
-        <div class="page-content-item blog">
+        <div class="page-content-item blog" id="blog">
           <div class="content">
             <div class="page-title-wrap">
               <h2 class="page-title">Blog</h2>
@@ -149,39 +149,52 @@
             <div class="blog-content">
               <div class="blog-post">
                 <div class="blog-img">
-                  <img src="image/bumi.jpg" alt="" />
+                  <img src="image/blog-1.jpg" alt="" />
                 </div>
                 <div class="blog-text">
-                  <span>28 Maret 2024</span>
-                  <a href="#" class="blog-title">10 Fakta Menarik tentang Planet Bumi</a>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod justo eget urna volutpat...</p>
+                  <span>FEBRUARI 17, 2024 · Teknologi</span>
+                  <a href="https://link.springer.com/article/10.1007/s11528-024-00939-0" class="blog-title">Keterjangkauan dan Tantangan Pendidikan ChatGPT: Keadaan Lapangan</a>
+                  <p>
+                    ChatGPT, model bahasa AI canggih, menjanjikan peningkatan pembelajaran bagi pendidik dan siswa. Penelitian menunjukkan potensinya dalam mendukung pengajaran, mengotomatisasi tugas, dan mengembangkan profesionalisme bagi
+                    pendidik. Bagi siswa, ChatGPT dapat membantu belajar 24/7, menjelaskan konsep sulit, menjadi mitra percakapan, memberikan umpan balik dan materi yang dipersonalisasi, membantu menulis, menawarkan penilaian diri,
+                    memfasilitasi keterlibatan, dan mendorong penentuan nasib sendiri. Meskipun memiliki banyak manfaat, ChatGPT juga memiliki keterbatasan dan potensi penyalahgunaan yang perlu dipertimbangkan.
+                  </p>
+                  <span>Sumber : Springer Link</span>
                 </div>
               </div>
               <div class="blog-post">
                 <div class="blog-img">
-                  <img src="image/mobil.jpg" alt="" />
+                  <img src="image/blog-2.jpg" alt="" />
                 </div>
                 <div class="blog-text">
-                  <span>28 Maret 2024</span>
-                  <a href="#" class="blog-title">Teknologi Terbaru: Kendaraan Terbang Masa Depan</a>
-                  <p>Nullam id erat eget ex consectetur tincidunt. Phasellus vel libero id nulla vehicula cursus...</p>
+                  <span>MEI 15, 2024 · Seni</span>
+                  <a href="https://iptek.co.id/manfaat-berkreasi-dalam-dunia-metaverse/" class="blog-title">Manfaat Berkreasi dalam Dunia Metaverse</a>
+                  <p>
+                    Manfaat Berkreasi dalam Dunia Metaverse Kini, Metaverse semakin populer dan berkembang dengan pesat dalam beberapa tahun terakhir ini. Tujuan utama dari metaverse yaitu untuk memberi pengalaman interaktif yang membantu
+                    pengguna untuk berkreasi dalam dunia virtual yang lebih terintegrasi. Selain itu, ada banyak manfaat sekali jika berkreasi dalam metaverse.
+                  </p>
+                  <span>Sumber : iptek.co.id</span>
                 </div>
               </div>
               <div class="blog-post">
                 <div class="blog-img">
-                  <img src="image/atlet.jpg" alt="" />
+                  <img src="image/blog-3.jpg" alt="" />
                 </div>
                 <div class="blog-text">
-                  <span>28 Maret 2024</span>
-                  <a href="#" class="blog-title">Pencapaian Luar Biasa Atlet Renang Indonesia</a>
-                  <p>Etiam sit amet ante sed purus fringilla rutrum. Duis commodo metus non libero maximus, eget...</p>
+                  <span>MARET 24, 2024 · Olahraga</span>
+                  <a href="https://www.cnnindonesia.com/olahraga/20240324081853-142-1078241/manifestasi-timnas-indonesia-menuju-piala-dunia-2026" class="blog-title">Manifestasi Timnas Indonesia Menuju Piala Dunia 2026</a>
+                  <p>
+                    Wajah Timnas Indonesia makin muda saat mengalahkan Vietnam dalam lanjutan Grup F Kualifikasi Piala Dunia 2026 pada Kamis (21/3). Tim racikan Shin Tae Yong ini menang 1-0 di Stadion Utama Gelora Bung Karno. Satu-satunya
+                    gol dalam laga yang disaksikan 57.696 penonton ini dicetak Egy Maulana Vikri.
+                  </p>
+                  <span>Sumber : CNN Indonesia</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Contact Section -->
-        <div class="page-content-item contact">
+        <div class="page-content-item contact" id="contact">
           <div class="content">
             <div class="page-title-wrap">
               <h2 class="page-title">Contact</h2>

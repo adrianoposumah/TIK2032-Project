@@ -1,10 +1,10 @@
 :root {
   /* =========== Colors =========== */
-  --primary: #77c5ee;
+  --primary: #eeb777;
   --primarydark: #24252a;
-  --primarylight: #f5f5f5;
+  --primarylight: #feffb7;
   --secondarydark: #6d6d6d;
-  --secondarybg: #e1e7e4;
+  --secondarybg: #ffebb7;
 
   /* ============ Font ============ */
   --body-font: "Poppins", sans-serif;
@@ -33,6 +33,9 @@ html {
 body {
   font-family: var(--body-font);
   background-color: var(--primary);
+  background-image: url(image/bg-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--secondarydark);
   padding: 0 13.5%;
 }
@@ -50,7 +53,10 @@ a {
 }
 
 .logo span {
-  color: var(--primarylight);
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 
 /* ======== CONTAINER ========= */
@@ -66,7 +72,7 @@ a {
   top: 200px;
   z-index: 1000;
   position: sticky;
-  background-color: #ffffff;
+  background-color: var(--primarylight);
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -109,7 +115,8 @@ a {
 }
 
 .navbutton:hover {
-  background-color: #cfd8d4;
+  background-color: var(--primary);
+  color: #ffffff;
 }
 
 /* ======== PROFILE ========= */
@@ -228,8 +235,10 @@ a {
   margin-bottom: 0;
 }
 
+/* ===== PAGE CONTENT ===== */
+
 .page-content-item {
-  background-color: #ffffff;
+  background-color: var(--primarylight);
   border-radius: 20px;
   margin-bottom: 30px;
   color: var(--primarydark);
@@ -275,7 +284,7 @@ a {
 }
 .gallery-item {
   padding: 10px;
-  background-color: #77c4ee63;
+  background-color: var(--primary);
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -296,10 +305,12 @@ a {
 
 .blog-post {
   width: 48%;
-  background-color: #77c4ee63;
+  background-color: var(--primary);
   border: 1px solid #ececec;
   margin: 20px 0;
   border-radius: 10px;
+  position: relative;
+  cursor: pointer;
 }
 
 .blog-img {
@@ -309,7 +320,7 @@ a {
 
 .blog-img img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   border-top-left-radius: 10px;
@@ -320,10 +331,12 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .blog-text span {
-  color: rgb(255, 98, 98);
+  color: rgb(255, 255, 255);
   font-size: 14px;
 }
 
@@ -334,7 +347,7 @@ a {
 }
 
 .blog-text .blog-title:hover {
-  color: var(--secondarydark);
+  color: #ffffff;
   transition: all ease 0.3s;
 }
 
@@ -347,6 +360,28 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 20px 0;
+}
+
+.blog-post:hover img {
+  filter: blur(1px); /* Efek blur saat cursor dihover */
+}
+
+.blog-post::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(252, 222, 198, 0.5); /* Warna overlay saat cursor dihover */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.blog-post:hover::after {
+  opacity: 1; /* Munculkan overlay saat cursor dihover */
 }
 
 /* ===== CONTACT ===== */
