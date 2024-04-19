@@ -16,7 +16,22 @@
     <script src="https://kit.fontawesome.com/bfff52efaa.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="logo">Adriano <span>Posumah</span></div>
+    <div class="head-nav">
+      <div class="logo">Adriano <span>Posumah</span></div>
+      <div class="header-button">
+        <div onclick="toggleColor()" class="theme">
+          <div class="darkmode theme-non-active">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="lightmode">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+        <div onclick="toggleNav()" class="nav-bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <!-- Profile Section -->
       <div class="profile">
@@ -87,13 +102,18 @@
             </div>
             <div class="Description">
               <h3>Halo, Selamat Datang</h3>
-              <p>Saya Adriano Putra Imanuel Posumah, adalah Mahasiswa Teknik Informatika di Universitas Sam Ratulangi Manado yang saat ini sedang belajar dalam dunia pemrograman</p>
+              <p>
+                Nama saya adalah Adriano Posumah. Saya merupakan mahasiswa di Universitas Sam Ratulangi Manado, Fakultas Teknik, Program Studi Teknik Informatika. Saya memiliki minat yang besar dalam pengembangan web dan desain grafis. Saya
+                juga memiliki pengalaman dalam membuat proyek-proyek web dan desain grafis untuk berbagai keperluan, mulai dari website pribadi hingga proyek-proyek komersial.
+              </p>
               <p style="margin-top: 5px">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, autem dignissimos! Minus, aut quidem, maxime repellat eligendi veritatis inventore similique delectus impedit consequuntur tenetur adipisci? Eveniet officiis
-                reprehenderit veritatis voluptatum!
+                Sebagai mahasiswa Program Studi Teknik Informatika, saya telah belajar banyak tentang konsep-konsep dasar pengembangan web, desain UI/UX, dan pemrograman. Saya juga terbiasa menggunakan berbagai tools dan bahasa pemrograman
+                seperti HTML, CSS, JavaScript, dan beberapa framework seperti Bootstrap. Dengan kombinasi antara pengetahuan teori dan praktik, saya bertekad untuk terus mengembangkan keterampilan saya dalam dunia web development dan design
+                untuk menciptakan portofolio yang menginspirasi dan profesional.
               </p>
               <!-- <h3 style="margin-top: 15px">Keahlian Saya</h3> -->
             </div>
+            <!-- Carousel -->
           </div>
           <div class="">
             <img src="" alt="" />
@@ -205,19 +225,19 @@
               <h2 class="page-title">Contact</h2>
             </div>
             <div class="contact-area">
-              <h4 class="contact-text">Hubungi Saya Hiya Hiya Hiya</h4>
+              <h4 class="contact-text">Hubungi Saya</h4>
               <form action="" class="contact-form">
                 <div class="form-input-item">
                   <label for="" class="input-label">name *</label>
-                  <input type="text" required class="input-box" />
+                  <input type="text" required class="input-box" disabled />
                 </div>
                 <div class="form-input-item">
                   <label for="" class="input-label">Email *</label>
-                  <input type="email" required class="input-box" />
+                  <input type="email" required class="input-box" disabled />
                 </div>
                 <div class="form-input-item">
                   <label for="" class="input-label">Message *</label>
-                  <textarea name="" class="input-box" id="" cols="30" rows="10"></textarea>
+                  <textarea name="" class="input-box" id="" cols="30" rows="10" disabled></textarea>
                 </div>
                 <div class="form-btn-wrap">
                   <button type="submit" class="form-btn">submit</button>
@@ -230,38 +250,37 @@
 
       <!-- Navbar Section -->
       <div class="navbar-wrap">
-        <nav class="navbar">
+        <nav class="navbar nav-active">
           <div class="navbar-nav">
             <div class="navlist">
               <a href="#home" class="homebutton navbutton">
                 <div class="nav-icon">
                   <i class="fa-solid fa-house"></i>
                 </div>
-                HOME</a
-              >
+                <h4>HOME</h4>
+              </a>
               <a href="#gallery" class="gallerybutton navbutton">
                 <div class="nav-icon">
                   <i class="fa-regular fa-image"></i>
                 </div>
-                GALLERY</a
-              >
+                <h4>GALLERY</h4>
+              </a>
               <a href="#blog" class="blogbutton navbutton">
                 <div class="nav-icon"><i class="fa-brands fa-blogger"></i></div>
-                BLOG</a
-              >
+                <h4>BLOG</h4>
+              </a>
               <a href="#contact" class="contactbutton navbutton">
                 <div class="nav-icon"><i class="fa-regular fa-address-card"></i></div>
-                CONTACT</a
-              >
+                <h4>CONTACT</h4>
+              </a>
             </div>
           </div>
         </nav>
       </div>
     </div>
-
     <!-- Footer Section -->
     <footer>© 2024 by Adriano Posumah || TIK-2032 Project || Personal Portofolio</footer>
   </body>
   <!-- Script -->
-  <!-- <script href="script.js"></script> -->
+  <script src="script.js"></script>
 </html>
